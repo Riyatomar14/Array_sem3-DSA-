@@ -7,3 +7,4 @@
        (  int partialArray[5] = {1, 2};  )
 6. We can initialize the array with all elements as ‘0’ by specifying ‘0’ inside the curly braces. This will happen in case of zero only if we try to initialize the array with a different value say ‘2’ using this method then ‘2’ is stored at the 0th index only.
             (   int zero_array[5] = {0};   )
+7. In C++, arrays and pointers are closely related to each other. The array name is treated as a pointer that stored the memory address of the first element of the array.
