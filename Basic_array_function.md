@@ -10,3 +10,11 @@
 7. In C++, arrays and pointers are closely related to each other. The array name is treated as a pointer that stored the memory address of the first element of the array.array name ane pointer contain gthe same starting address but address of array pointer cannot be changed but pointer changes.
 8. Array element can be accessed in two ways -
 i) by index or ii)by pointer(address)
+9. multi-dimensional array
+i) 2D
+   data_Type array_name[n][m];
+Where,
+
+n: Number of rows.
+m: Number of columns.
+(same as matrix)
