@@ -45,5 +45,64 @@ int main()
     return 0;
 }
 
-4.
+4.// c++ program to illustrate the two dimensional array
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Declaring 2D array
+    int arr[4][4];
+
+    // Initialize 2D array using loop
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            arr[i][j] = i + j;
+        }
+    }
+
+    // Printing the element of 2D array
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+5.// C++ program to illustrate the 3d array
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    // declaring 3d array
+    int arr[3][3][3];
+    // initializing the array
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            for (int k = 0; k < 3; k++) {
+                arr[i][j][k] = i + j + k;
+            }
+        }
+    }
+
+    // printing the array
+    for (int i = 0; i < 3; i++) {
+        cout << i << "st layer:" << endl;
+        for (int j = 0; j < 3; j++) {
+            for (int k = 0; k < 3; k++) {
+                cout << arr[i][j][k] << " ";
+            }
+            cout << endl;
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
 
