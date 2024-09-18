@@ -43,3 +43,40 @@ int main() {
     
     return 0;
 }
+
+// how to find thr sub-string from the given string
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool find(string str, string key) {
+    int m = str.length();
+    int n = key.length();
+    for (int i = 0; i <= m - n; i++) { 
+        int j;
+        for (j = 0; j < n; j++) {
+            if (str[i + j] != key[j]) {
+                break;
+            }
+        }
+        if (j == n) {
+            return true; 
+        }
+    }
+    return false;  
+}
+
+int main() {
+    string str, key;
+    cout << "Enter the string and the sub-string you want to find: ";
+    cin >> str >> key; 
+
+    if (find(str, key)) {  
+        cout << "Yes, the sub-string is present." << endl;
+    } else {
+        cout << "No, the sub-string is not present." << endl;
+    }
+
+    return 0;
+}
+
