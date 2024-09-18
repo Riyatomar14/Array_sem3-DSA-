@@ -27,7 +27,7 @@ int main() {
     }
     
     // search the element
-    int key;34
+    int key;
     cout << endl;
     cout << "enter the number you want to search:";
     cin >> key;
