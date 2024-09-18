@@ -80,3 +80,23 @@ int main() {
     return 0;
 }
 
+//How to replace the spaces of a string with a specific character in C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   string str;
+   char ch;
+   cout << "enter the string:";
+   getline(cin,str);
+   cout << "enter the char you want to put in place of space: ";
+   cin >> ch;
+   for(int i=0;i<str.length();i++){
+       if(str[i] == ' '){
+           str[i] = ch;
+       }
+   }
+   cout << str;
+    return 0;
+}
+
