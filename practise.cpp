@@ -100,3 +100,24 @@ int main() {
     return 0;
 }
 
+//How to replace the spaces of a string with a specific character in C++
+#include <iostream>
+using namespace std;
+
+int main() {
+   string str;
+  
+   cout << "enter the string:";
+   getline(cin,str);
+  
+   int word=0;
+   for(int i=0;i<str.length();i++){
+       if(str[i] == ' '){
+           word++;
+       }
+   }
+   word =word +1;
+  
+   cout << word;
+    return 0;
+}
