@@ -244,5 +244,39 @@ int main() {
     return 0;
 }
 
+9. deleting the element
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "enter the no. of element";
+    cin >>  n;
+    int arr[n];
+    cout<<" the array elemt are are:";
+    cout << endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int key;
+    cout << "enter the element you want to delete";
+    cin >> key;
+    
+    
+    for(int i=0;i<n;i++){
+        if(arr[i] == key){
+            for (int j = i; j < n - 1; j++) {
+                arr[j] = arr[j + 1];  
+                n--;
+                break;
+            }
+        }
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr[i];
+    }
+    return 0;
+}
 
 
