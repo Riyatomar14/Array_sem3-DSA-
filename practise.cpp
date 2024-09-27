@@ -1,4 +1,4 @@
-#include <iostream>
+cy#include <iostream>
 using namespace std;
 bool search(int arr[],int key,int n){
     for(int i=0; i<n ;i++){
@@ -135,6 +135,20 @@ int main() {
     cout << b[1] << endl;  // Output: khushi
     cout << b[2][5] << endl;  // Output: r (5th index of "sister", 0-based indexing)
 
+    return 0;
+}
+//find sum 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int sum=0;
+    for(int i=1;i<=n;i++){
+        sum= sum+i;
+    }
+    cout << sum;
     return 0;
 }
 
