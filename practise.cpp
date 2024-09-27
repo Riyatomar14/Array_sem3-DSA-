@@ -183,4 +183,35 @@ int main() {
 
     return 0;
 }
+//delete element on specific position in array
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+
+    int arr[n]; 
+    cout << "Enter the elements: ";
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    int pos;
+    cout << "Enter the position to delete: ";
+    cin >> pos;
+  
+
+   
+    for (int i = pos-1; i < n; i++) {
+        arr[i] = arr[i+1];
+    }
+    n--;
+    for(int i = 0; i < n; i++) {
+        cout << arr[i];
+    }
+}
+    
+
 
