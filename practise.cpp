@@ -121,3 +121,20 @@ int main() {
    cout << word;
     return 0;
 }
+//how is the 2D array work
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a[] = "hi, everyone";
+    cout << a << endl;
+
+    // Define the 2D array with proper sizes
+    char b[][10] = {"riya", "khushi", "sister"};  // 10 is an arbitrary size large enough to hold each string
+
+    cout << b[1] << endl;  // Output: khushi
+    cout << b[2][5] << endl;  // Output: r (5th index of "sister", 0-based indexing)
+
+    return 0;
+}
+
