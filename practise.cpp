@@ -151,4 +151,36 @@ int main() {
     cout << sum;
     return 0;
 }
+// insert element in array
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    int arr[n + 1]; // Increase array size by 1 to account for the new element
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    int pos;
+    cin >> pos;
+    int num;
+    cin >> num;
+
+    // Shift elements to the right from the position where we want to insert
+    for(int i = n; i > pos; i--) {
+        arr[i] = arr[i-1];
+    }
+
+    // Insert the new element
+    arr[pos] = num;
+
+    // Output the updated array (size is now n+1)
+    for(int i = 0; i <= n; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
 
